@@ -12,9 +12,12 @@
 <div class = "uper">
     @if(session()->get('success'))
         <div class = "alert alert-success">
-            {{session()->get('sucess')}}
+            {{session()->get('success')}}
         </div> <br />
     @endif
+
+    <a href = "{{url('/logout')}}" class = "btn btn-primary float-right">Log-Out</a>
+    <a href = "{{route('create')}}" class = "btn btn-primary">Create Book</a>
 
     <table class = "table table-striped">
         <thead>
